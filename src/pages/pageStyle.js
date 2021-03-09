@@ -11,4 +11,8 @@ export const AppContainer = styled.div`
 export const PageContainer = styled.nav`
     background-color: #121212;
     padding: 0px 18%;
+
+    @media only screen and (max-width: 150px) {
+        padding: 0px 9%;
+      }
 `

@@ -12,6 +12,10 @@ export const Container = styled.div`
     box-shadow: 2.5px 5px;
     padding: 10px;
 
+    @media only screen and (max-width: 750px) {
+      grid-template-columns: 1fr !important;
+    }
+
     animation: fadeIn ease 2s;
     -webkit-animation: fadeIn ease 2s;
     -moz-animation: fadeIn ease 2s;
@@ -61,10 +65,6 @@ export const Container = styled.div`
         100% {
           opacity:1;
       }
-
-    @media only screen and (max-width: 750px) {
-        grid-template-columns: 1fr !important;
-    }
 `
 
 
@@ -74,7 +74,7 @@ export const ImageContainer = styled.div`
     justify-items: center;
     align-items: center;
     img {
-        width: 100%;
+        width: 90%;
         height: auto;
         display: block;
         margin-left: auto;
@@ -89,6 +89,10 @@ export const ProjectDetails = styled.div`
     align-items: center;
     flex-direction: column;
     color: white;
+
+    @media only screen and (max-width: 750px) {
+      margin-top: 15px;
+    }
 `
 
 export const Title = styled.div`
@@ -104,7 +108,7 @@ export const Description = styled.div`
 `
 
 export const Button = styled.button`
-    background-color: #0e42eb;
+    background-color: #597df5;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -123,12 +127,13 @@ export const Button = styled.button`
 export const ButtonGroup = styled.div`
     display: grid;
     grid-template-columns: 1fr;
-    width: 80%;
+    width: 100%;
     justify-items: center;
     padding: 10px;
-
+    
     @media only screen and (max-width: 750px) {
         grid-template-columns: 1fr 1fr;
+        padding
     }
 
     & > a {

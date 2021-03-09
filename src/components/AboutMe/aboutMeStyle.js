@@ -5,7 +5,7 @@ export const Container = styled.div`
     width: 100%;
     grid-template-columns: 1fr 1.5fr;
     column-gap: 15px;
-
+    padding-top: 30px;
     @media only screen and (max-width: 750px) {
         grid-template-columns: 1fr !important;
         column-gap: 5px;
@@ -49,7 +49,7 @@ export const Portrait = styled.img`
     margin-right: auto;
 `
 export const AboutMeContent = styled.div`
-    padding: 70px 10px;
+    padding: 5px 10px;
 
     @media only screen and (max-width: 750px) {
         padding: 10px 10px;
@@ -68,7 +68,7 @@ export const Connect = styled.div`
     font-size: 0.8em;
 
     > a {
-        color: #0e42eb;
+        color: #597df5;
         text-decoration: none;
     }
 `

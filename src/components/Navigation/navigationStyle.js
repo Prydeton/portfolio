@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 
 export const Container = styled.nav`
     display: grid;
-    grid-template-columns: 5fr 1fr 1fr;
+    grid-template-columns: 5fr 1fr 2fr;
     align-items: center;
     justify-items: center;
     height: 20px;
@@ -15,6 +15,8 @@ export const Container = styled.nav`
 
     @media screen and (max-width: 650px) {
         font-size: 1em;
+        padding: 15px 5%;
+        height: 40px;
     }
 
     & > div:first-of-type {
@@ -25,7 +27,7 @@ export const Container = styled.nav`
 `;
 
 export const StyledLink = styled.div`
-    margin-right: 10%;
+    margin-right: 15%;
     position: relative;
     overflow: hidden;
     > a {
@@ -47,7 +49,7 @@ export const StyledLink = styled.div`
 	}
 
     > a span:hover {
-        color: #0e42eb;
+        color: #597df5;
         text-decoration: underline;
     }
 `;
@@ -62,4 +64,8 @@ export const StyledNavigationLogo = styled.a`
     & > :hover {
         color: #0e42eb;
     }
+`
+
+export const ExternalLinkLogos = styled.div`
+    padding-left: 40px;
 `

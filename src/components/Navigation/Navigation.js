@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import {
 	Container,
     StyledLink,
-    StyledNavigationLogo
+    StyledNavigationLogo,
+    ExternalLinkLogos
 } from './navigationStyle.js';
 
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
@@ -30,10 +31,10 @@ const Navigation = () => {
         <Container>
             <NavigationItem to="/" label="MAXWELL REID" />
             <NavigationItem to="/resume" label="RESUME" />
-            <div>
+            <ExternalLinkLogos>
                 <NavigationLogo to="https://www.linkedin.com/in/maxwellreid/" icon={faLinkedin} />
                 <NavigationLogo to="https://github.com/Prydeton" icon={faGithub} />
-            </div>
+            </ExternalLinkLogos>
         </Container>
     )
 }
