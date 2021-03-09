@@ -31,8 +31,10 @@ const Navigation = () => {
             <NavigationItem to="/" label="Maxwell Reid" />
             <NavigationItem to="/about" label="About" />
             <NavigationItem to="/resume" label="Resume" />
-            <NavigationLogo to="https://www.linkedin.com/in/maxwellreid/" icon={faLinkedin} />
-            <NavigationLogo to="https://github.com/Prydeton" icon={faGithub} />
+            <div>
+                <NavigationLogo to="https://www.linkedin.com/in/maxwellreid/" icon={faLinkedin} />
+                <NavigationLogo to="https://github.com/Prydeton" icon={faGithub} />
+            </div>
         </Container>
     )
 }
