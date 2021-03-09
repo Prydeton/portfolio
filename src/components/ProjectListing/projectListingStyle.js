@@ -1,17 +1,25 @@
 import styled from '@emotion/styled';
 
 export const Container = styled.div`
-    margin-top: 40px;
+    display: grid;
     width: 100%;
+    margin-top: 40px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+
     background-color: #1a1a1a;
     border-radius: 5px;
-    heigh: 100px;
-    display: flex;
     box-shadow: 5px 10px;
+
+    @media only screen and (max-width: 750px) {
+        grid-template-columns: 1fr !important;
+    }
 `
 
-export const Left = styled.div`
-    content-align: center;
+export const ImageContainer = styled.div`
+    display: grid;
+    justify-items: center;
+    align-items: center;
     flex: 60%;
     padding: 5px;
     img {
@@ -24,7 +32,7 @@ export const Left = styled.div`
     }
 `
 
-export const Right = styled.div`
+export const ProjectDetails = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,4 +63,23 @@ export const Button = styled.button`
     margin: 4px 2px;
     border-radius: 5px;
     cursor: pointer;
+
+    width: 80%;
+`
+
+export const ButtonGroup = styled.div`
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 80%;
+    justify-items: center;
+    padding: 10px;
+
+    @media only screen and (max-width: 750px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    & > a {
+        width: 100%;
+        text-align: center;
+    }
 `

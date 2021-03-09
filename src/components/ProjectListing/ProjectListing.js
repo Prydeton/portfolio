@@ -1,30 +1,35 @@
 import React from "react"
+import { Link } from 'react-router-dom'
 
-import {Container, Left, Right, Title, Description, Button} from "./projectListingStyle"
+import {
+    Container,
+    ImageContainer,
+    ProjectDetails,
+    Title,
+    Description,
+    Button,
+    ButtonGroup
+} from "./projectListingStyle"
 
 const ProjectListing = ({img, title, desc, srccode, live}) => {
     return (
-        <>
         <Container>
-            <Left>
+            <ImageContainer>
                 <img src={img}/>
-            </Left>
-            <Right>
+            </ImageContainer>
+            <ProjectDetails>
                 <Title>
                     {title}
                 </Title>
                 <Description>
                     {desc}
                 </Description>
-                <Button>
-                    <btn href={srccode}>Source Code</btn>
-                </Button>
-                <Button>
-                    <btn href={live}>Live Version</btn>
-                </Button>
-            </Right>
+                <ButtonGroup>
+                    <a href={srccode}><Button> Source Code </Button></a>
+                    <a href={live}><Button> Live Version </Button></a>
+                </ButtonGroup>
+            </ProjectDetails>
         </Container>
-        </>
     )
 }
 
