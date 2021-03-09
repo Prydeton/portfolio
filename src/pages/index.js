@@ -10,19 +10,20 @@ import { Navigation } from '../components';
 
 import {
 	PageContainer,
+    AppContainer
 } from './pageStyle.js';
 
 const Pages = () => {
 	return (
-		<>
+		<AppContainer>
+            <Navigation />
             <PageContainer>
-                <Navigation />
                 <Switch>
                     <Redirect from="/" to="/portfolio" exact />
                     <Route path="/portfolio" component={Portfolio} exact />
                 </Switch>
             </PageContainer>
-        </>
+        </AppContainer>
     );
 };
 
