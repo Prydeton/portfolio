@@ -24,11 +24,13 @@ export const AboutMeImage = styled.div`
     display: grid;
     justify-items: center;
     align-items: center;
-    padding: 10px;
-
+    padding: 5px;
+    height: max-content;
+    align-self: center;
+    
     border: 2px solid grey;
     border-radius: 10px;
-
+    
     img {
         width: 100%;
         height: auto;
@@ -58,6 +60,7 @@ export const Title = styled.div`
     font-size: 1.2em;
     color: white;
     margin-bottom: 10px;
+    font-weight: bold;
 `
 
 export const Connect = styled.div`
@@ -65,7 +68,7 @@ export const Connect = styled.div`
     font-size: 0.8em;
 
     > a {
-        color: #00FFFF;
+        color: #0e42eb;
         text-decoration: none;
     }
 `

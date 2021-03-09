@@ -1,11 +1,12 @@
 import React from 'react';
 
-import { AboutMe, Projects } from '../../components'
+import { AboutMe, Projects, Footer } from '../../components'
 const Portfolio = () => {
     return (
         <>
             <AboutMe />
             <Projects />
+            <Footer />
         </>
     );
 };

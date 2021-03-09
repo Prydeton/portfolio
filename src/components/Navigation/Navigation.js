@@ -21,16 +21,15 @@ const NavigationItem = ({ to, label, ...rest}) => {
 
 const NavigationLogo = ({ to, icon}) => {
     return (
-        <StyledNavigationLogo href={to}><FontAwesomeIcon icon={icon} /></StyledNavigationLogo>
+        <StyledNavigationLogo href={to}  target="_blank"><FontAwesomeIcon icon={icon} /></StyledNavigationLogo>
     );
 } 
 
 const Navigation = () => {
     return (
         <Container>
-            <NavigationItem to="/" label="Maxwell Reid" />
-            <NavigationItem to="/about" label="About" />
-            <NavigationItem to="/resume" label="Resume" />
+            <NavigationItem to="/" label="MAXWELL REID" />
+            <NavigationItem to="/resume" label="RESUME" />
             <div>
                 <NavigationLogo to="https://www.linkedin.com/in/maxwellreid/" icon={faLinkedin} />
                 <NavigationLogo to="https://github.com/Prydeton" icon={faGithub} />

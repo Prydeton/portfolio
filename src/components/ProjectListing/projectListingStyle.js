@@ -3,25 +3,76 @@ import styled from '@emotion/styled';
 export const Container = styled.div`
     display: grid;
     width: 100%;
-    margin-top: 40px;
+    margin-top: 15px;
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
-
+    padding-top: 10px;
     background-color: #1a1a1a;
     border-radius: 5px;
-    box-shadow: 5px 10px;
+    box-shadow: 2.5px 5px;
+    padding: 10px;
+
+    animation: fadeIn ease 2s;
+    -webkit-animation: fadeIn ease 2s;
+    -moz-animation: fadeIn ease 2s;
+    -o-animation: fadeIn ease 2s;
+    -ms-animation: fadeIn ease 2s;
+
+    @keyframes fadeIn {
+        0% {
+          opacity:0;
+        }
+        100% {
+          opacity:1;
+        }
+      }
+      
+      @-moz-keyframes fadeIn {
+        0% {
+          opacity:0;
+        }
+        100% {
+          opacity:1;
+        }
+      }
+      
+      @-webkit-keyframes fadeIn {
+        0% {
+          opacity:0;
+        }
+        100% {
+          opacity:1;
+        }
+      }
+      
+      @-o-keyframes fadeIn {
+        0% {
+          opacity:0;
+        }
+        100% {
+          opacity:1;
+        }
+      }
+      
+      @-ms-keyframes fadeIn {
+        0% {
+          opacity:0;
+        }
+        100% {
+          opacity:1;
+      }
 
     @media only screen and (max-width: 750px) {
         grid-template-columns: 1fr !important;
     }
 `
 
+
+
 export const ImageContainer = styled.div`
     display: grid;
     justify-items: center;
     align-items: center;
-    flex: 60%;
-    padding: 10px;
     img {
         width: 100%;
         height: auto;
@@ -37,22 +88,23 @@ export const ProjectDetails = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex: 40%;
     color: white;
 `
 
 export const Title = styled.div`
     font-size: 1.2em;
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    font-weight: bold;
 `
 
 export const Description = styled.div`
     font-size: 0.8em;
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    text-align: center;
 `
 
 export const Button = styled.button`
-    background-color: #00FFFF;
+    background-color: #0e42eb;
     border: none;
     color: white;
     padding: 15px 32px;

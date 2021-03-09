@@ -2,17 +2,14 @@ import styled from '@emotion/styled';
 
 export const Container = styled.nav`
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    width: 100%;
+    grid-template-columns: 5fr 1fr 1fr;
     align-items: center;
     justify-items: center;
-    height: 60px;
+    height: 20px;
     top: 0;
     left: 0;
-    padding-top: 35px;
-    padding-bottom: 25px;
+    padding: 25px 15%;
     margin: auto;
-    margin-bottom: 25px;
     background-color: #1a1a1a;
     font-size: 1.5em;
 
@@ -36,17 +33,21 @@ export const StyledLink = styled.div`
         display: flex;
         align-items: center;
         text-decoration: none;
+        transition: background .2s ease-in
     }
 
     > a span {
         margin: 0 8px;
         color: white;
         text-decoration: none;
-        /*font-size: 20px;*/
+        font-family: 'JetBrains Mono', monospace;
+        font-weight: 600;
+        -webkit-transition: color 0.3s; /* For Safari 3.0 to 6.0 */
+        transition: color 0.3s; /* For modern browsers */
 	}
 
     > a span:hover {
-        /*color: grey;*/
+        color: #0e42eb;
         text-decoration: underline;
     }
 `;
@@ -55,4 +56,10 @@ export const StyledNavigationLogo = styled.a`
     color: white;
     font-size: 20px;
     margin-right: 15px;
+    -webkit-transition: color 0.3s; /* For Safari 3.0 to 6.0 */
+    transition: color 0.3s; /* For modern browsers */
+
+    & > :hover {
+        color: #0e42eb;
+    }
 `
