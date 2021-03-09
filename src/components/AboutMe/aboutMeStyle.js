@@ -24,7 +24,11 @@ export const AboutMeImage = styled.div`
     display: grid;
     justify-items: center;
     align-items: center;
-    padding: 5px;
+    padding: 10px;
+
+    border: 2px solid grey;
+    border-radius: 10px;
+
     img {
         width: 100%;
         height: auto;
