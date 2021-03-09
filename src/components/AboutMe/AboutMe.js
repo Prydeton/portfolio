@@ -2,8 +2,8 @@ import React from "react"
 
 import {
 	Container,
-    Left,
-    Right,
+    AboutMeImage,
+    AboutMeContent,
     Blurb,
     Title,
     Portrait,
@@ -19,10 +19,10 @@ import portrait from "../../img/AboutMeImage.jpg"
 const AboutMe = () => {
     return (
         <Container>
-            <Left>
+            <AboutMeImage>
                 <Portrait src={portrait}/>
-            </Left>
-            <Right>
+            </AboutMeImage>
+            <AboutMeContent>
                 <Title>
                     Hey! I'm <span style={{color: "#00FFFF"}}>Max</span>
                 </Title>
@@ -38,7 +38,7 @@ const AboutMe = () => {
                 <br/>
                 <a href="#" download><FontAwesomeIcon icon={faFile} /> Check out my resume</a>
                 </Connect>
-            </Right>
+            </AboutMeContent>
         </Container>
     )
 }

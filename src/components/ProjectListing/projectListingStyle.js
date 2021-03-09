@@ -21,7 +21,7 @@ export const ImageContainer = styled.div`
     justify-items: center;
     align-items: center;
     flex: 60%;
-    padding: 5px;
+    padding: 10px;
     img {
         width: 100%;
         height: auto;
@@ -63,7 +63,8 @@ export const Button = styled.button`
     margin: 4px 2px;
     border-radius: 5px;
     cursor: pointer;
-
+    color: #121212;
+    font-weight: bold;
     width: 80%;
 `
 
