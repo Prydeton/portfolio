@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from 'react-router-dom'
 
 import {
     Container,
@@ -15,7 +14,7 @@ const ProjectListing = ({img, title, desc, srccode, live}) => {
     return (
         <Container>
             <ImageContainer>
-                <img src={img}/>
+                <img src={img} alt='project screenshot'/>
             </ImageContainer>
             <ProjectDetails>
                 <Title>
