@@ -96,7 +96,7 @@ export const ProjectDetails = styled.div`
     color: white;
 
     @media only screen and (max-width: 750px) {
-      margin-top: 16px;
+      margin-top: 15px;
     }
 `
 
