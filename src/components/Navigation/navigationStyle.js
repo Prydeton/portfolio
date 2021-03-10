@@ -5,7 +5,6 @@ export const Container = styled.nav`
     grid-template-columns: 5fr 1fr 2fr;
     align-items: center;
     justify-items: center;
-    height: 20px;
     top: 0;
     left: 0;
     padding: 25px 15%;
@@ -16,7 +15,6 @@ export const Container = styled.nav`
     @media screen and (max-width: 650px) {
         font-size: 1em;
         padding: 15px 5%;
-        height: 40px;
     }
 
     & > div:first-of-type {
