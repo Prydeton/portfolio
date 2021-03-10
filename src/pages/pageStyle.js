@@ -6,6 +6,10 @@ import styled from '@emotion/styled';
 
 export const AppContainer = styled.div`
     background-color: #0e42eb;
+
+    * {
+        box-sizing: border-box !important;
+    }
 `
 
 export const PageContainer = styled.nav`

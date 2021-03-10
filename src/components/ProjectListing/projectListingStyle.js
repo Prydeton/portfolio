@@ -22,6 +22,10 @@ export const Container = styled.div`
     -o-animation: fadeIn ease 2s;
     -ms-animation: fadeIn ease 2s;
 
+    @media only screen and (max-width: 750px) {
+        grid-template-columns: 1fr !important;
+    }
+
     @keyframes fadeIn {
         0% {
           opacity:0;
@@ -73,9 +77,11 @@ export const ImageContainer = styled.div`
     display: grid;
     justify-items: center;
     align-items: center;
+
     img {
-        width: 90%;
-        height: auto;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -134,6 +140,10 @@ export const ButtonGroup = styled.div`
     @media only screen and (max-width: 750px) {
         grid-template-columns: 1fr 1fr;
         padding
+    }
+
+    @media only screen and (max-width: 550px) {
+        grid-template-columns: 1fr;
     }
 
     & > a {
