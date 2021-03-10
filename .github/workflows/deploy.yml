@@ -18,9 +18,9 @@ jobs:
           npm run build
 
       - name: Deploy 
-        uses: JamesIves/github-pages-deploy-action@4.1.0
+        uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
-          repository-name: Prydeton/Prydeton.github.io
-          branch: gh-pages
-          token: ${{ secrets.ACCESS_TOKEN }}
-          folder: build
+          REPOSITORY_NAME: Prydeton/Prydeton.github.io
+          BRANCH: gh-pages
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          FOLDER: build
