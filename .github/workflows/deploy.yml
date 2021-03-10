@@ -21,4 +21,4 @@ jobs:
           repository-name: Prydeton/Prydeton.github.io
           branch: gh-pages
           token: ${{ secrets.ACCESS_TOKEN }}
-          folder: src
+          folder: .
