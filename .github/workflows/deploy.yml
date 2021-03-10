@@ -22,6 +22,6 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           token: ${{ secrets.ACCESS_TOKEN }}
-	  BRANCH: gh-pages
+          BRANCH: main
           FOLDER: build
-	  repository-name: Prydeton.github.io
+          repository-name: Prydeton.github.io
