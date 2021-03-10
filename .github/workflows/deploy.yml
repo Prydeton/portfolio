@@ -7,10 +7,10 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 
+      - name: Checkout 🛎️
         uses: actions/checkout@v2.3.1
 
-      - name: Install and Build 
+      - name: Install and Build 🔧
         run: |
           npm install
           npm run build
@@ -21,4 +21,4 @@ jobs:
           repository-name: Prydeton/Prydeton.github.io
           branch: gh-pages
           token: ${{ secrets.ACCESS_TOKEN }}
-          folder: .
+          folder: dist
