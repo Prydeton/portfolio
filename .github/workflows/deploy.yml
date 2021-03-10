@@ -21,7 +21,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: main
           FOLDER: build
-          REPOSITORY_NAME: Prydeton.github.io
+          REPOSITORY_NAME: Prydeton/Prydeton.github.io
