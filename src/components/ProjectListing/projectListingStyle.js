@@ -101,7 +101,7 @@ export const ProjectDetails = styled.div`
 `
 
 export const Title = styled.div`
-    font-size: 1.2em;
+    font-size: 1.6em;
     margin-bottom: 10px;
     font-weight: bold;
 `

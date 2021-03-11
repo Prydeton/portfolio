@@ -57,10 +57,13 @@ export const AboutMeContent = styled.div`
 `
 
 export const Title = styled.div`
-    font-size: 1.2em;
+    font-size: 1.6em;
     color: white;
     margin-bottom: 10px;
     font-weight: bold;
+    @media only screen and (min-width: 850) {
+        font-size: 1.2em;
+    }
 `
 
 export const Connect = styled.div`
@@ -75,12 +78,16 @@ export const Connect = styled.div`
 
 export const Blurb = styled.div`
     color: white;
-    font-size: 0.8em;
+    font-size: 1.2em;
     width: 90%;
     margin-bottom: 70px;
 
     @media only screen and (max-width: 750px) {
         padding: 10px 0px;
         margin-bottom: 10px;
+    }
+
+    @media only screen and (max-width: 1425px) {
+        font-size: 0.8em
     }
 `

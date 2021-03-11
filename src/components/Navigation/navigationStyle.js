@@ -48,7 +48,6 @@ export const StyledLink = styled.div`
 
     > a span:hover {
         color: #597df5;
-        text-decoration: underline;
     }
 `;
 
@@ -56,11 +55,9 @@ export const StyledNavigationLogo = styled.a`
     color: white;
     font-size: 20px;
     margin-right: 15px;
-    -webkit-transition: color 0.3s; /* For Safari 3.0 to 6.0 */
-    transition: color 0.3s; /* For modern browsers */
 
     & > :hover {
-        color: #0e42eb;
+        color: #597df5;
     }
 `
 

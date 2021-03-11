@@ -9,16 +9,7 @@ import {
 
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-const NavigationItem = ({ to, label, ...rest}) => {
-    return (
-        <StyledLink title={label}>
-            <Link to={to} {...rest}>
-            <span>{label}</span>
-            </Link>
-        </StyledLink>
-    );
-};
+import resume from '../../files/Portfolio.pdf'
 
 const NavigationLogo = ({ to, icon}) => {
     return (
@@ -29,8 +20,16 @@ const NavigationLogo = ({ to, icon}) => {
 const Navigation = () => {
     return (
         <Container>
-            <NavigationItem to="/" label="MAXWELL REID" />
-            <NavigationItem to="/resume" label="RESUME" />
+            <StyledLink title={"MAXWELL REID"}>
+                <Link to="/">
+                    <span>{"MAXWELL REID"}</span>
+                </Link>
+            </StyledLink>
+                <StyledLink title={"RESUME"}>
+                    <a href={resume} download="Maxwell Reid - Resume">
+                        <span>{"RESUME"}</span>
+                    </a>
+                </StyledLink>
             <ExternalLinkLogos>
                 <NavigationLogo to="https://www.linkedin.com/in/maxwellreid/" icon={faLinkedin} />
                 <NavigationLogo to="https://github.com/Prydeton" icon={faGithub} />
