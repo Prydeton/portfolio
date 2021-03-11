@@ -9,7 +9,7 @@ import {
 const Footer  = () => {
     return (
         <Container>
-            <p>I'm probably listing to my <a href="https://open.spotify.com/user/31jtpbvmijwzaudmypya6ergvhla"  target="_blank" rel="noreferrer"> <FontAwesomeIcon icon={faSpotify} color={"#597df5"}/> </a> playlist</p>
+            <p>I'm probably listening to my <a href="https://open.spotify.com/user/31jtpbvmijwzaudmypya6ergvhla"  target="_blank" rel="noreferrer"> <FontAwesomeIcon icon={faSpotify} color={"#597df5"}/> </a> playlist</p>
             <p>Maxwell Reid</p>
         </Container>
     );
