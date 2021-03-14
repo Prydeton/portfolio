@@ -27,7 +27,7 @@ const AboutMe = () => {
                     Hey! I'm <span style={{color: "#597df5"}}>Max</span>
                 </Title>
                 <Blurb>
-                    I'm a Computer Science student in my second year at the Royal Melbourne Institute of Technology. I spend most of my time studying, working on side projects, playing dungeons and dragons and listing to EDM. 
+                    I'm a Computer Science student in my second year at the Royal Melbourne Institute of Technology. I spend most of my time studying, working on side projects, playing dungeons and dragons and listening to EDM. 
                 </Blurb>
                 <Connect>
                     <a href="https://github.com/Prydeton" target="_blank" rel="noreferrer">
