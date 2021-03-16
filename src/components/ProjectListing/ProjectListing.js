@@ -24,8 +24,8 @@ const ProjectListing = ({img, title, desc, srccode, live}) => {
                     {desc}
                 </Description>
                 <ButtonGroup>
-                    <a href={srccode}><Button> Source Code </Button></a>
-                    <a href={live}><Button> Live Version </Button></a>
+                    <a href={srccode}  target="_blank" rel="noreferrer"><Button> Source Code </Button></a>
+                    <a href={live}  target="_blank" rel="noreferrer"><Button> Live Version </Button></a>
                 </ButtonGroup>
             </ProjectDetails>
         </Container>
