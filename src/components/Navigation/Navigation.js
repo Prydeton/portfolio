@@ -9,7 +9,7 @@ import {
 
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import resume from '../../files/Portfolio.pdf'
+import resume from '../../files/MaxwellReid-Resume.pdf'
 
 const NavigationLogo = ({ to, icon}) => {
     return (

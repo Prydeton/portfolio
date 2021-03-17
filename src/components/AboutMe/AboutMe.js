@@ -13,7 +13,7 @@ import {
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faFile, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import resume from '../../files/Portfolio.pdf'
+import resume from '../../files/MaxwellReid-Resume.pdf'
 import portrait from "../../img/AboutMeImage.jpg"
 
 const AboutMe = () => {
